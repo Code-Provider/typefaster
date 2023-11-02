@@ -1,0 +1,82 @@
+:root {
+  --bg-color: #323437;
+  --main-color: #e2b714;
+  --caret-color: #e2b714;
+  --sub-color: #646669;
+  --sub-alt-color: #2c2e31;
+  --text-color: #d1d0c5;
+  --error-color: #ca4754;
+  --error-extra-color: #7e2a33;
+  --colorful-error-color: #ca4754;
+  --colorful-error-extra-color: #7e2a33;
+}
+
+body,html {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+}
+
+* {
+  box-sizing : border-box;
+}
+
+textarea {
+  background-color: var(--bg-color);  
+  position: absolute;
+  top: 30%;
+  font-size: 2rem;
+  border: none;
+  outline: none;
+  width: 50vw;
+  resize: none;
+  height: 800px; 
+}
+
+@media (min-width : 700px) {
+  textarea {
+    height : 350px;
+  }
+}
+
+textarea::-webkit-scrollbar {
+  display: none;
+}
+
+.container {
+  display : flex;
+  flex-direction : column;
+  align-items : center;
+  height : 100vh;
+}
+
+.template-box {
+  color: gray;
+}
+
+.text-box {
+  background: transparent;
+  z-index: 100;
+}
+
+.utils {
+  position: absolute;
+  top: 20%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.restart-button {
+  padding: .75rem;
+  background-color: var(--bg-color);
+  color: #FFFFFF;
+  border-color: var(--text-color);
+
+}
+
+.counter {
+  font-size: 2rem;
+  text-align: center;
+  color: var(--main-color);
+}
